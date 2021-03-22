@@ -8,11 +8,10 @@ SE_for_book
 需要条件
 ---------
 
-elasticsearch https://www.elastic.co/cn/downloads/elasticsearch[下载]
+elasticsearch [下载](https://www.elastic.co/cn/downloads/elasticsearch,"download")
+(还可安装elasticsearch-head插件方便查看)
 
 所需要的python包：elasticsearch，scrapy，flask
-
-配置方法：通过pip安装
 
 ```shell
 python -m pip install elasticsearch
@@ -22,6 +21,7 @@ python -m pip install flask
 
 运行方法
 ---------
+(假设elasticsearch和elasticsearch-head都在es文件夹)
 
 + 首先运行elasticsearch：
   
