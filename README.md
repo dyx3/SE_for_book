@@ -5,10 +5,12 @@ SE_for_book
 
 ![image-20200814220029899](https://github.com/goodyong/SE_for_book/blob/master/image-20200814220029899.png)
 
-依赖
+需要条件
 ---------
 
-所需要的包：elasticsearch，scrapy，flask
+elasticsearch https://www.elastic.co/cn/downloads/elasticsearch[下载]
+
+所需要的python包：elasticsearch，scrapy，flask
 
 配置方法：通过pip安装
 
