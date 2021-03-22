@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+    <head>
+        <meta charset="UTF-8">
+        <title>搜索结果</title>
+        <style type="text/css">
+            .table table {
+                width:100%;
+                margin:15px 0;
+                border:0;
+            }
+            .table th {
+                background-color:#93DAFF;
+                color:#000000
+            }
+            .table,.table th,.table td {
+                font-size:0.95em;
+                text-align:center;
+                padding:4px;
+                border-collapse:collapse;
+            }
+            .table th,.table td {
+                border: 1px solid #c1e9fe;
+                border-width:1px 0 1px 0
+            }
+            .table tr {
+                border: 1px solid #c1e9fe;
+            }
+            .table tr:nth-child(odd){
+                background-color:#dbf2fe;
+            }
+            .table tr:nth-child(even){
+                background-color:#fdfdfd;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="width: auto; height: inherit">
+            <a href="#" onClick="javascript :history.back(-1);"><font size="6">返回</font></a>
+            <div id="content">
+                <form action = '/search' method="get" style="font-size: 20pt">
+                    搜索：<input type="text" name="wd" style="font-size: 20pt" value={{wd}} />
+                    <input type="hidden" name="page" value={{1}} />
+                    <input type="submit" style="font-size: 20pt" value="搜索图书"/>
+                </form>
+            </div>
+            <div id="page_turn">
+                <form action = '/search' method="get" style="font-size: 20pt; width: 800px">
+                    <input type="hidden" name="wd" value={{wd}} />
+                    页号(1至{{range}})：<input type="text" name="page" style="font-size: 20pt; width: 100px" value={{cur_page}} />
+                    <input type="submit" style="font-size: 20pt" value="跳转"/>
+                </form>
+            </div>
+            <h1 align="center">搜索<font color="red">{{wd}}</font> </h1>
+            <h1 align="center">搜索结果:共<font color="red">{{num}}</font>条结果</h1>
+            <table class="table">
+                <thead>
+                    <th width="100">书名</th>
+                    <th width="100">作者</th>
+                    <th width="100">出版社</th>
+                    <th width="100">评分</th>
+                    <th width="100">装帧</th>
+                    <th width="100">丛书</th>
+                    <th width="100">页数</th>
+                    <th width="100">价格</th>
+                    <th width="100">ISBN</th>
+                    <th>内容简介</th>
+                </thead>
+                <tbody>
+                    {%for i in data%}
+                    <tr>
+                        <td width="100"><a href="{{i['url']}}" target="_blank" style="text-decoration: none">{{i['name']}}</a></td>
+                        <td width="100">{{i['author']}}</td>
+                        <td width="100">{{i['publisher']}}</td>
+                        <td width="100">{{i['score']}}</td>
+                        <td width="100">{{i['binding']}}</td>
+                        <td width="100">{{i['series']}}</td>
+                        <td width="100">{{i['page_num']}}</td>
+                        <td width="100">{{i['price']}}元</td>
+                        <td width="100">{{i['isbn']}}元</td>
+                        <td >{{i['intro']}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

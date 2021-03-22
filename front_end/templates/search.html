@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>搜索引擎</title>
+        <style type="text/css">
+            #content {
+                position: absolute;
+                top: 40%;
+                left: 35%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="content">
+            <h1 align="center">图书搜索</h1>
+            <form action = '/search' method="get" style="font-size: 20pt" align="center">
+                搜索：<input type="text" name="wd" style="font-size: 20pt"  />
+                <input type="hidden" name="page" value={{1}} />
+                <input type="submit" style="font-size: 20pt" value="搜索图书"/>
+            </form>
+        </div>
+    </body>
+</html>
