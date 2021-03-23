@@ -31,9 +31,6 @@ class BookSpider(scrapy.Spider):
 
     def parse_book(self, response):
         item = BookItem()
-        self.count = 1 + self.count
-        print('count is ', self.count)
-        # item['count'] = self.count
         item['url'] = response.url
         # 书名
         try:
