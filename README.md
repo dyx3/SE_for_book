@@ -5,12 +5,13 @@ SE_for_book
 
 ![image-20200814220029899](https://github.com/goodyong/SE_for_book/blob/master/image-20200814220029899.png)
 
-依赖
+需要条件
 ---------
 
-所需要的包：elasticsearch，scrapy，flask
+elasticsearch [下载](https://www.elastic.co/cn/downloads/elasticsearch,"download")
+(还可安装elasticsearch-head插件方便查看)
 
-配置方法：通过pip安装
+所需要的python包：elasticsearch，scrapy，flask
 
 ```shell
 python -m pip install elasticsearch
@@ -20,6 +21,7 @@ python -m pip install flask
 
 运行方法
 ---------
+(假设elasticsearch和elasticsearch-head都在es文件夹)
 
 + 首先运行elasticsearch：
   
