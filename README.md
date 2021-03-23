@@ -3,7 +3,13 @@ SE_for_book
 
 本系统是关于图书的搜索引擎，内容是豆瓣图书中的部分标签下的内容（标签见下图）。
 
-![image-20200814220029899](https://github.com/goodyong/SE_for_book/blob/master/image-20200814220029899.png)
+![image-20200814220029899](https://github.com/goodyong/SE_for_book/blob/master/img/tags.png)
+
+运行效果为
+
+![image-20200814220029899](https://github.com/goodyong/SE_for_book/blob/master/img/search.jpg)
+
+![image-20200814220029899](https://github.com/goodyong/SE_for_book/blob/master/img/result.jpg)
 
 需要条件
 ---------
