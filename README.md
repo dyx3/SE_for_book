@@ -7,7 +7,7 @@ SE_for_book
 
 运行效果为
 
-![image-20200814220029899](https://github.com/goodyong/SE_for_book/blob/master/img/search.jpg)
+![image-20200814220029899](https://github.com/goodyong/SE_for_book/blob/master/img/search.png)
 
 ![image-20200814220029899](https://github.com/goodyong/SE_for_book/blob/master/img/result.jpg)
 
